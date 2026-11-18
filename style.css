@@ -25,11 +25,13 @@ body {
 
 /* Main heading */
 .hero-content h1 {
-    font-size: 64px; /* Makes the main heading large */
-    font-weight: bold; /* Makes the heading bold */
-    margin-bottom: 10px; /* Adds space below the heading */
-    color: #292820; /* Sets a dark earthy text color */
+    font-family: 'Rubik', sans-serif; /* Uses the Rubik Google Font */
+    font-size: 64px; /* Sets heading size */
+    font-weight: 700; /* Makes heading bold */
+    margin-bottom: 10px; /* Adds bottom spacing */
+    color: #292820; /* Sets heading color */
 }
+
 
 /* Subheading */
 .hero-content h2 {
