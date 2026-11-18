@@ -1,0 +1,108 @@
+
+/* General page styling */
+body {
+    margin: 0; /* Removes the default page margin */
+    padding: 0; /* Removes the default page padding */
+    font-family: Arial, Helvetica, sans-serif; /* Sets a clean font */
+    background-color: #f3eee5; /* Creates a warm beige background */
+    color: #292820; /* Sets the main text color */
+}
+
+/* Main hero section */
+.hero {
+    display: flex; /* Places the text and image side by side */
+    align-items: center; /* Vertically centers the content */
+    justify-content: space-between; /* Adds space between both sides */
+    padding: 80px 8%; /* Adds space around the hero section */
+    min-height: 500px; /* Gives the section enough height */
+}
+
+/* Text content area */
+.hero-content {
+    width: 50%; /* Sets the text area width */
+    padding-right: 30px; /* Adds space between text and image */
+}
+
+/* Main heading */
+.hero-content h1 {
+    font-size: 64px; /* Makes the main heading large */
+    font-weight: bold; /* Makes the heading bold */
+    margin-bottom: 10px; /* Adds space below the heading */
+    color: #292820; /* Sets a dark earthy text color */
+}
+
+/* Subheading */
+.hero-content h2 {
+    font-size: 28px; /* Sets the subheading size */
+    font-weight: normal; /* Keeps the subheading lighter */
+    margin-top: 0; /* Removes extra space above */
+    margin-bottom: 25px; /* Adds space below the subheading */
+    color: #77715f; /* Uses a muted earthy color */
+}
+
+/* Description paragraph */
+.hero-content p {
+    font-size: 18px; /* Sets paragraph text size */
+    line-height: 1.7; /* Improves readability between lines */
+    margin-bottom: 35px; /* Adds space before the button */
+    color: #55534b; /* Sets a soft dark gray color */
+}
+
+/* Call to action button */
+.hero-button {
+    display: inline-block; /* Allows padding and button styling */
+    background-color: #55543b; /* Sets an earthy olive background */
+    color: white; /* Makes the button text white */
+    padding: 16px 32px; /* Adds space inside the button */
+    border-radius: 30px; /* Creates rounded button edges */
+    text-decoration: none; /* Removes the link underline */
+    font-size: 16px; /* Sets the button text size */
+    font-weight: bold; /* Makes the button text bold */
+    transition: background-color 0.3s ease; /* Creates a smooth color change */
+}
+
+/* Button hover effect */
+.hero-button:hover {
+    background-color: #777454; /* Lightens the button when hovering */
+}
+
+/* Product image area */
+.hero-image {
+    width: 50%; /* Sets the image area width */
+    text-align: center; /* Centers the image */
+}
+
+/* Product image */
+.hero-image img {
+    width: 100%; /* Makes the image fill its container */
+    max-width: 550px; /* Prevents the image from becoming too large */
+    height: auto; /* Keeps the original image proportions */
+}
+
+/* Mobile screen adjustments */
+@media screen and (max-width: 768px) {
+
+    .hero {
+        flex-direction: column; /* Places content vertically */
+        text-align: center; /* Centers the text */
+        padding: 50px 7%; /* Reduces spacing on smaller screens */
+    }
+
+    .hero-content {
+        width: 100%; /* Uses the full available width */
+        padding-right: 0; /* Removes extra right spacing */
+    }
+
+    .hero-content h1 {
+        font-size: 45px; /* Reduces heading size */
+    }
+
+    .hero-content h2 {
+        font-size: 23px; /* Reduces subheading size */
+    }
+
+    .hero-image {
+        width: 100%; /* Uses the full available width */
+        margin-top: 40px; /* Adds space above the image */
+    }
+}
